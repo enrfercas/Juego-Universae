@@ -4,7 +4,7 @@ export const Home = () => {
     <>
       <div className="container-fluid body-content">
         <div className="row">
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
@@ -23,10 +23,10 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card">
               <img
-                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
+                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton1.png"
                 style={{ width: "95%" }}
               />
               <div className="card__content">
@@ -42,10 +42,10 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card">
               <img
-                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
+                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton2.png"
                 style={{ width: "95%" }}
               />
               <div className="card__content">
@@ -61,10 +61,10 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card">
               <img
-                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
+                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton3.png"
                 style={{ width: "95%" }}
               />
               <div className="card__content">
@@ -80,10 +80,10 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card">
               <img
-                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
+                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton4.png"
                 style={{ width: "95%" }}
               />
               <div className="card__content">
@@ -99,10 +99,10 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card">
               <img
-                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
+                src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton5.png"
                 style={{ width: "95%" }}
               />
               <div className="card__content">

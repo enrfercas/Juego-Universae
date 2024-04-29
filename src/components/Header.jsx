@@ -1,11 +1,11 @@
+import { Link } from 'react-router-dom'
+
 export const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "#134c8f" }}>
+      <nav className="navbar navbar-expand-lg fixed-top" style={{ backgroundColor: "#134c8f" }}>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <Link to='/' className="navbar-brand" > <img src='/public/icono.png'  style={{width: '70px'}}/> </Link>
           <button
             className="navbar-toggler"
             type="button"
