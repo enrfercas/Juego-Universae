@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "#134c8f" }}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             Navbar
@@ -14,21 +14,22 @@ export const Header = () => {
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon" ></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a className="nav-link" aria-current="page" href="#" style={{ color: "#fff" }}>
                 Home
               </a>
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#" style={{ color: "#fff" }}>
                 Features
               </a>
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#" style={{ color: "#fff" }}>
                 Pricing
               </a>
-              <a className="nav-link disabled" aria-disabled="true">
+              <a className="nav-link disabled" aria-disabled="true" style={{ color: "#fff" }}>
                 Disabled
               </a>
             </div>
