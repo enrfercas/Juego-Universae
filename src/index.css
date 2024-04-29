@@ -5,8 +5,17 @@ body, html{
 .body-content {
     padding: 3rem;
     margin-bottom: 3rem;
-    margin-top: 7rem;
+    margin-top: 15rem;
+    width: 60%;
     
+    
+}
+@media (max-width: 480px) {
+    .body-content {
+        padding: 2rem;
+        width: 90%;
+        margin-top: 8rem;
+    }
 }
 
 

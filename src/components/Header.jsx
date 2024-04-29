@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 export const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg fixed-top" style={{ backgroundColor: "#134c8f" }}>
+      <nav className="navbar navbar-expand-lg fixed-top gradient-header">
         <div className="container-fluid">
-          <Link to='/' className="navbar-brand" > <img src='/public/icono.png'  style={{width: '70px'}}/> </Link>
+          <Link to='/' className="navbar-brand logo-universae" > <img src='/public/icono.png' style={{ width: '65px', height: 'auto' }} /> </Link>
           <button
             className="navbar-toggler"
             type="button"

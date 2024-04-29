@@ -3,27 +3,32 @@
 .card {
   position: relative;
   border: none;
-  width: 90%;
+  margin-bottom: 2rem;
+  width: 100%;
   background-color: #b6e1f9;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  perspective: 1000px;
-  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  perspective: 1200px;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.2, 1.275);
+
+  opacity: 0;
+  /* Inicialmente transparente */
+  animation: aparecer 4s ease forwards;
+
 }
 
 
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
   cursor: pointer;
 }
 
 .card__content {
   position: absolute;
-  top: 8px;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -32,7 +37,7 @@
   background-color: #b6e1f9;
   transform: rotateX(-90deg);
   transform-origin: bottom;
-  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.0);
 }
 
 .card:hover .card__content {
@@ -41,6 +46,7 @@
   border-radius: 15%;
   background-color: #134c8f;
   color: white;
+  z-index: 100;
 }
 
 .card__title {
@@ -50,9 +56,6 @@
   font-weight: 700;
 }
 
-.card:hover svg {
-  scale: 0;
-}
 
 .card__description {
   margin: 10px 0 0;
@@ -70,8 +73,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 35%;
-  background: #ff9c00;
+  border-radius: 2rem;
+  background: #86d295;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -83,9 +86,9 @@
   content: " ";
   width: 0%;
   height: 100%;
-  background: #86d295;
+  background: #b6e1f9;
   position: absolute;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
   right: 0;
 }
 
@@ -109,7 +112,7 @@
 }
 
 .game-button:hover span {
-  
+
   animation: scaleUp 0.3s ease-in-out;
 }
 
@@ -156,8 +159,8 @@
   .game-button {
     bottom: 1rem;
     right: 1.2rem;
-    width: 7rem;
-    height: 3rem;
+    width: 5.5rem;
+    height: 2.6rem;
     border-radius: 2rem;
   }
 
@@ -169,4 +172,69 @@
     font-weight: 700;
     letter-spacing: 0.2rem;
   }
+}
+
+
+
+
+
+/*  HEADER / NAV */
+
+.gradient-header {
+  padding: 2rem 3rem;
+  background: rgb(2, 14, 27);
+  background: linear-gradient(90deg, rgba(2, 14, 27, 1) 0%, rgba(19, 76, 143, 1) 50%, rgba(137, 188, 247, 1) 100%);
+  background-size: 200% 100%;
+  /* Doble tamaño para que el gradiente se extienda */
+  animation: headerMov 3.5s linear infinite;
+  /* Aplica la animación */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes headerMov {
+  0% {
+    background-position: 0 0;
+    /* Empieza con el gradiente en la posición inicial */
+  }
+
+  50% {
+    background-position: 100% 0;
+    /* Llega a la posición final en la mitad del tiempo */
+  }
+
+  100% {
+    background-position: 0 0;
+    /* Vuelve a la posición inicial al final de la animación */
+  }
+}
+
+.logo-universae {
+  opacity: 0;
+  /* Inicialmente transparente */
+  animation: aparecer 7s ease forwards;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    /* Comienza completamente transparente */
+  }
+
+  100% {
+    opacity: 1;
+    /* Termina completamente opaco */
+  }
+}
+
+.gradient-footer {
+  background: rgb(150, 191, 237);
+  background: linear-gradient(90deg, rgb(91, 147, 212) 0%, rgba(19, 76, 143, 1) 30%, rgba(2, 14, 27, 1) 100%);
+  background-size: 200% 100%;
+  /* Doble tamaño para que el gradiente se extienda */
+  animation: headerMov 3.5s linear infinite;
+  /* Aplica la animación */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
