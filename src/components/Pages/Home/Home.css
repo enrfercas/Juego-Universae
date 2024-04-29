@@ -3,15 +3,19 @@
 .card {
   position: relative;
   border: none;
-  margin-bottom: 2rem;
+  margin-bottom: 2.6rem;
   width: 100%;
-  background-color: #b6e1f9;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   perspective: 1200px;
   transition: all 1.5s cubic-bezier(0.175, 0.885, 0.2, 1.275);
+  border-radius: 8%;
+
+  --bs-card-bg: none;
+
+
 
   opacity: 0;
   /* Inicialmente transparente */
@@ -43,7 +47,7 @@
 .card:hover .card__content {
   top: 0;
   transform: rotateX(0deg);
-  border-radius: 15%;
+  border-radius: 8%;
   background-color: #134c8f;
   color: white;
   z-index: 100;

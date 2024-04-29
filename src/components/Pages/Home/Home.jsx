@@ -8,7 +8,7 @@ export const Home = () => {
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
-                style={{ width: "95%" }}
+                style={{ width: "96%" }}
               />
               <div className="card__content">
                 <p className="card__title">Card Title</p>
@@ -27,7 +27,7 @@ export const Home = () => {
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton1.png"
-                style={{ width: "95%" }}
+                style={{ width: "96%" }}
               />
               <div className="card__content">
                 <p className="card__title">Card Title</p>
@@ -46,7 +46,7 @@ export const Home = () => {
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton2.png"
-                style={{ width: "95%" }}
+                style={{ width: "96%" }}
               />
               <div className="card__content">
                 <p className="card__title">Card Title</p>
@@ -65,7 +65,7 @@ export const Home = () => {
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton3.png"
-                style={{ width: "95%" }}
+                style={{ width: "96%" }}
               />
               <div className="card__content">
                 <p className="card__title">Card Title</p>
@@ -84,7 +84,7 @@ export const Home = () => {
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton4.png"
-                style={{ width: "95%" }}
+                style={{ width: "96%" }}
               />
               <div className="card__content">
                 <p className="card__title">Card Title</p>
@@ -103,7 +103,7 @@ export const Home = () => {
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton5.png"
-                style={{ width: "95%" }}
+                style={{ width: "96%" }}
               />
               <div className="card__content">
                 <p className="card__title">Card Title</p>

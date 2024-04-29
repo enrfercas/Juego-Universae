@@ -1,6 +1,31 @@
-body, html{
-    background-color: #b6e1f9;
+
+
+html {
+    
+    background-image: url(../public/universae-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Cambiado de 'contain' a 'cover' */
+    background-position: center center;
+    z-index: -5;
 }
+body {
+    background-color: transparent;
+}
+
+
+
+html::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.675); /* Color negro con una opacidad del 40% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+     /* Asegura que el color de fondo esté detrás de la imagen */
+}
+
 
 .body-content {
     padding: 3rem;
