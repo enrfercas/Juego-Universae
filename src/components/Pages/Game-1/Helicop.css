@@ -1,0 +1,49 @@
+.game-button {
+    position: fixed;
+    bottom: 5rem;
+    right: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: #86d295;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .game-button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #b6e1f9;
+    position: absolute;
+    transition: all 0.6s ease-in-out;
+    right: 0;
+  }
+  
+  .game-button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  
+  .game-button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #134c8f;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .game-button:hover span {
+  
+    animation: scaleUp 0.3s ease-in-out;
+  }

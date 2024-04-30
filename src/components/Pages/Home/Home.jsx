@@ -1,10 +1,13 @@
 import './Home.css';
+
+import { Link } from 'react-router-dom'
 export const Home = () => {
   return (
     <>
       <div className="container-fluid body-content">
         <div className="row">
-          <div className="col-lg-4 col-md-6 d-flex justify-content-center">
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center">           
+            
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
@@ -17,11 +20,12 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
-                <button className="game-button">
+                <Link to='/Helicop'><button className="game-button">
                   <span>Jugar</span>
-                </button>
+                </button></Link>
               </div>
             </div>
+            
           </div>
           <div className="col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card">
