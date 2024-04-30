@@ -186,7 +186,7 @@
 /*  HEADER / NAV */
 
 .gradient-header {
-  padding: 2rem 3rem;
+  padding: 1rem 1rem;
   background: rgb(2, 14, 27);
   background: linear-gradient(90deg, rgba(2, 14, 27, 1) 0%, rgba(19, 76, 143, 1) 50%, rgba(137, 188, 247, 1) 100%);
   background-size: 200% 100%;

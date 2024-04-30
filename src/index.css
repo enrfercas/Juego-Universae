@@ -1,6 +1,12 @@
-
-
-
+/* Variables */
+:root {
+    --header-color: #134c8f;
+    --text-color: white;
+    --content-color: #b6e1f9;
+    --logo-height: 30px;
+    --social-links-margin: 10px;
+    --social-links-color: #45b8ac;
+}
 
 
 body {
@@ -42,6 +48,23 @@ body {
         width: 90%;
         margin-top: 8rem;
     }
+}
+/* Estilos del Pie de Página */
+
+.social-links {
+
+    margin: 0 var(--social-links-margin);
+    color: var(--text-color);
+}
+
+.social-links:hover {
+    color: var(--social-links-color);
+    font-size: 1.2rem;
+}
+footer {
+    
+        
+    z-index: 1000;
 }
 
 

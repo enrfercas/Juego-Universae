@@ -5,7 +5,7 @@ export const Header = () => {
     <>
       <nav className="navbar navbar-expand-lg fixed-top gradient-header">
         <div className="container-fluid">
-          <Link to='/' className="navbar-brand logo-universae" > <img src='/public/icono.png' style={{ width: '65px', height: 'auto' }} /> </Link>
+          <Link to='/' className="navbar-brand logo-universae" > <img src='/public/icono.png' style={{ width: '60px', height: 'auto' }} /> </Link>
           <button
             className="navbar-toggler"
             type="button"
