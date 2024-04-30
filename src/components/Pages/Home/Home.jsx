@@ -1,4 +1,5 @@
 import './Home.css';
+import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <>
@@ -112,9 +113,10 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
-                <button className="game-button">
+                 <Link to='/Bomberos' className="navbar-brand logo-universae" ><button className="game-button">
                   <span>Jugar</span>
-                </button>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
