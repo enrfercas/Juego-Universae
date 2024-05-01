@@ -56,23 +56,23 @@ export const Bomberos = () => {
         <div className="carousel-container">
           <div className="carousel-slide">
             <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Extincion/Extincion0.png"
+              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor0.png"
               alt="Imagen 1"
             />
             <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Extincion/Extincion1.png"
+              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor1.png"
               alt="Imagen 2"
             />
             <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Extincion/Extincion2.png"
+              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor2.png"
               alt="Imagen 3"
             />
             <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Extincion/Extincion3.png"
+              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor3.png"
               alt="Imagen 4"
             />
             <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Extincion/Extincion4.png"
+              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor4.png"
               alt="Imagen 5"
             />
           </div>
@@ -91,7 +91,6 @@ export const Bomberos = () => {
               cultural Baiame y al todopoderoso dios de la lluvia, la Serpiente
               del Arco Iris.
             </p>
-           
           </div>
           <div className="cover">
             <img src="/public/logo_azul.png" alt="logo universae" />
