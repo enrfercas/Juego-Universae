@@ -197,3 +197,113 @@ p {
     width: 60px;
 }
 
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .carousel-container {
+        width: 90%;
+        height: 200px;
+        margin: 80px auto 0;
+        margin-top: 110px;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+        .prev-btn {
+            margin-top: 50px;
+        }
+    
+        .next-btn {
+            margin-top: 50px;
+        }
+
+    .contenedor-texto {
+        max-width: 90%;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .juego {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin-top: 280px;
+        margin-left: 5%;
+        margin-bottom: 60px;
+    }
+
+    .book {
+        width: 80%;
+        height: auto;
+        margin-top: 16rem;
+        margin-right: 3%;
+    }
+
+    .book-text {
+        width: 80%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .carousel-container {
+        width: 80%;
+        height: 250px;
+        margin: 90px auto ;
+    }
+
+    .carousel-slide{
+       margin-top: 30px;
+        
+    }
+         .prev-btn {
+             margin-top: 50px;
+         }
+    
+         .next-btn {
+             margin-top: 50px;
+         }
+
+    .carousel-slide img {
+        width: 100%;
+
+        transform: translateX(0);
+    }
+
+    .contenedor-texto {
+        max-width: 80%;
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    .juego {
+        position: relative;
+        width: 35rem;
+        height:34rem;
+        margin-top: 180px;
+        margin-right: 43px;
+        margin-bottom: 150px;
+       
+    }
+
+    .book {
+        width: 70%;
+        height: auto;
+        margin-top: 20rem;
+        margin-left: 118%;
+        
+    }
+
+    .book-text {
+        width: 70%;
+        height: auto;
+        margin-top: 60px;
+        margin-left: 15%;
+    }
+}
