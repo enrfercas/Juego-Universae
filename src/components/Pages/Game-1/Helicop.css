@@ -47,3 +47,7 @@
   
     animation: scaleUp 0.3s ease-in-out;
   }
+
+  .header-spacer {
+    height: 60px;
+  }
