@@ -50,11 +50,11 @@ export const Bomberos = () => {
       }
     });
 
-   
+   // swettalert//
     Swal.fire({
       title: 'Bienvenido a Rescate en Ascensor',
       text: 'Haz clic para continuar',
-      icon: 'info',
+      icon: 'game',
       confirmButtonText: 'Continuar'
     });
   }, []);
