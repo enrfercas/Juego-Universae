@@ -1,5 +1,7 @@
 import "./Bomberos.css";
 import { useEffect } from "react";
+import Swal from "sweetalert2";
+
 
 export const Bomberos = () => {
   useEffect(() => {
@@ -47,12 +49,24 @@ export const Bomberos = () => {
         carouselImages[counter].classList.add("active");
       }
     });
+
+   
+    Swal.fire({
+      title: 'Bienvenido a Rescate en Ascensor',
+      text: 'Haz clic para continuar',
+      icon: 'info',
+      confirmButtonText: 'Continuar'
+    });
   }, []);
 
+  
   return (
     <>
+      <div id="app"></div>
       <div className="contenedor-principal">
         <div className="espacio-header"></div>
+       
+
         <div className="carousel-container">
           <div className="carousel-slide">
             <img
@@ -88,8 +102,7 @@ export const Bomberos = () => {
               azul hostil. Pon fin a la era del Tiempo de los Sueños mediante el
               asesinato violento de los dioses australianos. Destruye los tótems
               para expulsar el poder divino del mundo mundano y mata al héroe
-              cultural Baiame y al todopoderoso dios de la lluvia, la Serpiente
-              del Arco Iris.
+              cultural Baiame.
             </p>
           </div>
           <div className="cover">
@@ -103,7 +116,7 @@ export const Bomberos = () => {
             className="juego"
             scrolling="no"
             allowfullscreen=""
-            frameborder="0"
+            frameBorder="0"
             src="https://html-classic.itch.zone/html/8561483/index.html"
           ></iframe>
         </div>

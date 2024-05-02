@@ -56,7 +56,7 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
-                <button  className="game-button">
+                <button className="game-button">
                   <span>Jugar</span>
                 </button>
               </div>
@@ -107,14 +107,15 @@ export const Home = () => {
                 style={{ width: "96%" }}
               />
               <div className="card__content">
-                <p className="card__title">Card Title</p>
+                <p className="card__title">Rescate En Ascensor</p>
                 <p className="card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                  Dreamtime Combat es un juego de acción y plataformas basado en
+                  la mitología aborigen australiana, en el que juegas como un
+                  águila azul hostil
                 </p>
-                 <Link to='/Bomberos' className="navbar-brand logo-universae" ><button className="game-button">
-                  <span>Jugar</span>
+                <Link to="/Bomberos" className="navbar-brand logo-universae">
+                  <button className="game-button">
+                    <span>Jugar</span>
                   </button>
                 </Link>
               </div>
