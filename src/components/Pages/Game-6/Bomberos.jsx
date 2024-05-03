@@ -65,8 +65,7 @@ export const Bomberos = () => {
       <div id="app"></div>
       <div className="contenedor-principal">
         <div className="espacio-header"></div>
-       
-
+        
         <div className="carousel-container">
           <div className="carousel-slide">
             <img
