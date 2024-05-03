@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Home.css';
 export const Home = () => {
   return (
@@ -74,9 +75,11 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
+                <Link to ='/Robot'>
                 <button className="game-button">
                   <span>Jugar</span>
                 </button>
+                </Link>
               </div>
             </div>
           </div>

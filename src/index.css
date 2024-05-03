@@ -17,12 +17,7 @@ body {
     z-index: -5;
     height: 100vh;
 }
-@media (max-width: 768px){
-    body {
-        height: auto;
 
-    }
-}
  
 
 
