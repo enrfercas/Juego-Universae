@@ -256,7 +256,7 @@ p {
 
     .juego{
         position: relative;
-        width: 90%;
+        width: 83%;
         height: 250px;
         margin: 35px auto;
     }
@@ -306,8 +306,8 @@ p {
 
     .juego {
         position: relative;
-        width: 89%;
-        height:410px;
+        width: 90%;
+        height:400px;
         margin: 35px auto;
        
     }
