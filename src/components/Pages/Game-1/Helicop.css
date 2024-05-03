@@ -103,3 +103,9 @@ iframe {
   }
 }
 
+@media(max-width: 680px) {
+  .description {
+    max-width: 100vw;
+  }
+}
+
