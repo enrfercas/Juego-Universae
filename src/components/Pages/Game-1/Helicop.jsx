@@ -24,23 +24,25 @@ export const Helicop = () => {
             style={{ zIndex: 2000 }}
           >
             <div className="modal-content d-flex w-100">
-              <div className="modal-header mx-auto">
-                <h5 className="modal-title">Helicopter</h5>
-                <button
-                  type="button"
-                  className="btn-close ms-3"
-                  onClick={cerrarModalHandler}
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div className="modal-body">
-                <iframe
-                  className="juego"
-                  scrolling="no"
-                  allowFullScreen={true}
-                  frameBorder="0"
-                  src="https://html-classic.itch.zone/html/8561483/index.html"
-                ></iframe>
+              <div className="card text-bg-light p-1">
+                <div className="modal-header mx-auto">
+                  <h5 className="modal-title mb-2">Helicopter</h5>
+                  <button
+                    type="button"
+                    className="btn-close ms-3"
+                    onClick={cerrarModalHandler}
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body w-100">
+                  <iframe
+                    className="juego"
+                    scrolling="no"
+                    allowFullScreen={true}
+                    frameBorder="0"
+                    src="https://html-classic.itch.zone/html/8561483/index.html"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -106,7 +108,6 @@ export const Helicop = () => {
           <div className="row mb-5">
             <div className="col-lg-6">
               <span className="description">
-                
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 magni nam officiis soluta cum ipsam porro laudantium
                 consectetur, repellendus vel esse alias hic quibusdam eos minima
@@ -114,7 +115,7 @@ export const Helicop = () => {
               </span>
             </div>
             <div className="col-lg-6 mb-5">
-              <button className="game-button" onClick={mostrarIframeHandler}>
+              <button className="game-button1" onClick={mostrarIframeHandler}>
                 {" "}
                 Jugar{" "}
               </button>
