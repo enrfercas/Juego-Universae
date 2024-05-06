@@ -8,13 +8,24 @@
     --social-links-color: #45b8ac;
 }
 
+
+html {
+    height: 100%;
+}
+
 body {
     background-image: url(../public/Games-Images/fondo_universae.png);
     background-repeat: no-repeat;
     background-size: cover; /* Cambiado de 'contain' a 'cover' */
     background-position: center center;
     z-index: -5;
-    
+    height: 100vh;
+}
+@media (max-width: 768px){
+    body {
+        height: auto;
+
+    }
 }
 
  

@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router';
 import { Home } from './components/Pages/Home/Home.jsx'
 import { Footer } from './components/Footer.jsx'
 import { Rcp } from './components/Pages/Game-2/Rcp.jsx';
+import { Helicop } from './components/Pages/Game-1/Helicop.jsx';
 
 function App() {
   
@@ -15,6 +16,8 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route> 
         <Route path='/Rcp' element={<Rcp></Rcp>}></Route> 
 
+        <Route path='/' element={<Home></Home>}></Route>        
+        <Route path='/Helicop' element={<Helicop></Helicop>}></Route>        
       </Routes>
       <Footer></Footer>
     </>
