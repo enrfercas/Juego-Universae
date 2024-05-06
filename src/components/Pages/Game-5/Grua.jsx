@@ -101,7 +101,7 @@ export const Grua = () => {
             <div className="col-lg-6">
               <img
                 className="imagen-boton"
-                src="/public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero0.png"
+                src="/public/iframe-imagen.png"
                 style={{ width: "90%" }}
                 onClick={mostrarIframeHandler}
               />
