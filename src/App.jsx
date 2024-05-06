@@ -17,13 +17,9 @@ function App() {
       <Routes>
         
         <Route path='/' element={<Home></Home>}></Route> 
-        <Route path='/Rcp' element={<Rcp></Rcp>}></Route> 
-
-        <Route path='/' element={<Home></Home>}></Route>        
+        <Route path='/Rcp' element={<Rcp></Rcp>}></Route>     
         <Route path='/Helicop' element={<Helicop></Helicop>}></Route>        
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/Bomberos" element={<Bomberos></Bomberos>}></Route>
-        <Route path='/' element={<Home></Home>}></Route>  
+        <Route path="/Bomberos" element={<Bomberos></Bomberos>}></Route> 
         <Route path='/Robot' element={<Robot></Robot>}></Route>              
       </Routes>
       <Footer></Footer>
