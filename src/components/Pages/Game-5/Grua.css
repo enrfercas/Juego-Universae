@@ -61,3 +61,22 @@
     
     
 }
+
+.imagen-juego{
+    width: 90%;
+    
+
+}
+
+.imagen-modal {
+    width: 70%;
+}
+
+@media (max-width:680px){
+    .imagen-juego {
+        width: 60%;
+    }
+    .imagen-modal{
+        width: 95%;
+    }
+}
