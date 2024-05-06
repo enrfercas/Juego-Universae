@@ -7,6 +7,7 @@ import { Helicop } from './components/Pages/Game-1/Helicop.jsx';
 import {Bomberos} from './components/Pages/Game-6/Bomberos.jsx';
 
 import { Robot } from './components/Pages/Game-4/Robot.jsx';
+import { Fire } from './components/Pages/Game-3/Fire.jsx';
 
 function App() {
   
@@ -18,7 +19,9 @@ function App() {
         
         <Route path='/' element={<Home></Home>}></Route> 
         <Route path='/Rcp' element={<Rcp></Rcp>}></Route>     
-        <Route path='/Helicop' element={<Helicop></Helicop>}></Route>        
+        <Route path='/Helicop' element={<Helicop></Helicop>}></Route> 
+        <Route path='/Fire' element={<Fire></Fire>}></Route> 
+
         <Route path="/Bomberos" element={<Bomberos></Bomberos>}></Route> 
         <Route path='/Robot' element={<Robot></Robot>}></Route>              
       </Routes>
