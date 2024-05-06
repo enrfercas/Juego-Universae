@@ -32,6 +32,7 @@
 
 .card__content {
   position: absolute;
+  border: 5px solid #86d295;
   top: 0;
   left: 0;
   width: 100%;
@@ -46,6 +47,7 @@
 
 .card:hover .card__content {
   top: 0;
+  border: 5px solid #86d295;
   transform: rotateX(0deg);
   border-radius: 8%;
   background-color: #134c8f;
@@ -219,6 +221,7 @@
   opacity: 0;
   /* Inicialmente transparente */
   animation: aparecer 7s ease forwards;
+  
 }
 
 @keyframes aparecer {

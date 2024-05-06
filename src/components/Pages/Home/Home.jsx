@@ -1,4 +1,7 @@
 import './Home.css';
+import { Link } from 'react-router-dom';
+
+
 export const Home = () => {
   return (
     <>
@@ -24,22 +27,27 @@ export const Home = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6 d-flex justify-content-center">
+
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton1.png"
                 style={{ width: "96%" }}
               />
-              <div className="card__content">
-                <p className="card__title">Card Title</p>
-                <p className="card__description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
-                <button className="game-button">
-                  <span>Jugar</span>
-                </button>
-              </div>
+              <Link to='/Rcp'>
+                <div className="card__content">
+                  <p className="card__title text-center">JUEGO 2</p>
+                  <p className="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                  </p>
+                  
+                  <button className="game-button">
+                      <span>Jugar</span>
+                  </button>
+                  
+                </div>
+              </Link>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 d-flex justify-content-center">
@@ -55,7 +63,7 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
-                <button  className="game-button">
+                <button className="game-button">
                   <span>Jugar</span>
                 </button>
               </div>
@@ -123,3 +131,4 @@ export const Home = () => {
     </>
   );
 };
+export default Home;

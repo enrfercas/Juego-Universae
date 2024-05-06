@@ -1,0 +1,170 @@
+.contenedor-principal {
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-juego {
+    display: flex;
+    width: 98%;
+    margin: 3.5rem auto;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    /* Inicialmente transparente */
+    animation: aparecer 4s ease forwards;
+}
+
+
+.titulo-juego {
+    color: #ff9c00;
+    padding: .6rem 1.2rem;
+    display: inline-block;
+    border-radius: .2rem;
+    background: rgba(150, 191, 237, 0.293);
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: calc(1.1rem);
+    overflow: hidden;
+    width: fit-content;
+    /* Para ocultar el texto que se desborda */
+    border-right: .15em solid orange;
+    /* Simula el cursor de escritura */
+    white-space: nowrap;
+    /* Evita que el texto se rompa */
+    margin: 0 auto;
+    /* Centra el texto */
+    letter-spacing: .15em;
+    /* Espaciado entre letras */
+    animation: escribir 2.5s steps(37) forwards;
+    /* Animación de escribir */
+}
+
+@keyframes escribir {
+    from {
+        width: 0;
+    }
+
+    /* Ancho inicial, el texto no es visible */
+    to {
+        width: 60%;
+    }
+
+    /* Ancho final, el texto está completamente visible */
+}
+.juego-descripcion {
+    width: 20%;
+    padding: 2rem 4rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: #134d8f45;
+}
+.juego-descripcion span {
+    font-weight: bold;
+    color: #ff9c00;
+}
+.juego-descripcion h2 {
+    color: #ff9c00;
+}
+
+.div-juego {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 52rem;
+    border-radius: 2rem;
+    background: rgb(150, 191, 237);
+    background: linear-gradient(180deg, rgb(91, 147, 212) 0%, rgba(19, 76, 143, 1) 30%, rgba(2, 14, 27, 1) 100%);
+    
+}
+
+.juego {
+    width: 100%;
+    height: 100%;
+}
+.galeria-juego {
+    width: 20%;
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #134d8f45;
+    border-radius: 2rem;
+}
+.galeria-juego h3 {
+    margin: 2rem 5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #134c8f;
+    background-color: #ff9d00;
+    padding: 0.7rem 1.6rem;
+    border-radius: .6rem;
+    width: 100%;
+}
+.imagen-juego{
+    width: 45%;
+    cursor: pointer;
+    transition: all .2s ease;
+    margin: .2rem;
+}
+.imagen-juego:hover{
+    transform: scale(1.1);
+}
+
+/*   MODAL  */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: #0c2e54ca;
+    
+
+}
+.modal-off {
+    display: none;
+}
+
+.modal-content {
+    width: 50%; 
+    background-color: #16519400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.imagen-modal {
+    width: 100%;
+}
+
+
+
+@media (max-width: 1400px) {
+    .contenedor-juego{
+        flex-direction: column;
+    }
+    .juego-descripcion, .div-juego, .galeria-juego {
+        width: 80%;
+    }
+    .galeria-juego {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .imagen-juego {
+        width: 38%;
+    }
+}
+
+
