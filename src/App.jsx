@@ -4,12 +4,14 @@ import { Home } from './components/Pages/Home/Home.jsx'
 import { Footer } from './components/Footer.jsx'
 import { Rcp } from './components/Pages/Game-2/Rcp.jsx';
 import { Helicop } from './components/Pages/Game-1/Helicop.jsx';
+import {Bomberos} from './components/Pages/Game-6/Bomberos.jsx';
+
 
 function App() {
   
 
   return (
-    <>      
+    <>
       <Header></Header>
       <Routes>
         
@@ -18,10 +20,12 @@ function App() {
 
         <Route path='/' element={<Home></Home>}></Route>        
         <Route path='/Helicop' element={<Helicop></Helicop>}></Route>        
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/Bomberos" element={<Bomberos></Bomberos>}></Route>
       </Routes>
       <Footer></Footer>
     </>
-  )
+  );
 }
 
 export default App
