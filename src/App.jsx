@@ -6,6 +6,7 @@ import { Rcp } from './components/Pages/Game-2/Rcp.jsx';
 import { Helicop } from './components/Pages/Game-1/Helicop.jsx';
 import {Bomberos} from './components/Pages/Game-6/Bomberos.jsx';
 
+import { Robot } from './components/Pages/Game-4/Robot.jsx';
 
 function App() {
   
@@ -22,6 +23,8 @@ function App() {
         <Route path='/Helicop' element={<Helicop></Helicop>}></Route>        
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/Bomberos" element={<Bomberos></Bomberos>}></Route>
+        <Route path='/' element={<Home></Home>}></Route>  
+        <Route path='/Robot' element={<Robot></Robot>}></Route>              
       </Routes>
       <Footer></Footer>
     </>
