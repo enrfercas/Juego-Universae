@@ -14,8 +14,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
-    "yet-another-react-lightbox": "^3.17.5",
-    "sweetalert2": "^11.10.8"
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.10.8",
+    "yet-another-react-lightbox": "^3.17.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

@@ -1,13 +1,12 @@
-import { Link } from 'react-router-dom';
-import './Home.css';
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 export const Home = () => {
   return (
     <>
       <div className="container-fluid body-content">
         <div className="row">
-          <div className="col-lg-4 col-md-6 d-flex justify-content-center">           
-            
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center">
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton0.png"
@@ -20,33 +19,35 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
-                <Link to='/Helicop'><button className="game-button">
-                  <span>Jugar</span>
-                </button></Link>
+                <Link to="/Helicop">
+                  <button className="game-button">
+                    <span>Jugar</span>
+                  </button>
+                </Link>
               </div>
             </div>
-            
           </div>
           <div className="col-lg-4 col-md-6 d-flex justify-content-center">
-
             <div className="card">
               <img
                 src="../../../public/Games-Images/InterfazHome/Miniaturas_simuladores/HomeButton1.png"
                 style={{ width: "96%" }}
               />
-              <Link to='/Rcp'>
+              <Link to="/Rcp">
                 <div className="card__content">
-                  <p className="card__title text-center">PROTOCOLO ANTE UNA HEMORRAGIA INTERNA</p>
+                  <p className="card__title text-center">
+                    PROTOCOLO ANTE UNA HEMORRAGIA INTERNA
+                  </p>
                   <p className="card__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
                   </p>
-                  
+
                   <button className="game-button">
-                      <span>Jugar</span>
+                    <span>Jugar</span>
                   </button>
-                  
                 </div>
               </Link>
             </div>
@@ -64,9 +65,11 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
-                <button className="game-button">
-                  <span>Jugar</span>
-                </button>
+                <Link to="/Fire">
+                  <button className="game-button">
+                    <span>Jugar</span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -83,10 +86,10 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
-                <Link to ='/Robot'>
-                <button className="game-button">
-                  <span>Jugar</span>
-                </button>
+                <Link to="/Robot">
+                  <button className="game-button">
+                    <span>Jugar</span>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -104,9 +107,11 @@ export const Home = () => {
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
-                <button className="game-button">
-                  <span>Jugar</span>
-                </button>
+                <Link to="/Grua">
+                  <button className="game-button">
+                    <span>Jugar</span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

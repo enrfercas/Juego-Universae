@@ -9,9 +9,7 @@
 }
 
 
-html {
-    height: 100%;
-}
+
 
 body {
     background-image: url(../public/Games-Images/fondo_universae.png);
@@ -19,7 +17,7 @@ body {
     background-size: cover; /* Cambiado de 'contain' a 'cover' */
     background-position: center center;
     z-index: -5;
-    height: 100vh;
+    
 }
 
  
