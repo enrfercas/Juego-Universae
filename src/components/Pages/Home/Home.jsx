@@ -35,7 +35,7 @@ export const Home = () => {
               />
               <Link to='/Rcp'>
                 <div className="card__content">
-                  <p className="card__title text-center">JUEGO 2</p>
+                  <p className="card__title text-center">PROTOCOLO ANTE UNA HEMORRAGIA INTERNA</p>
                   <p className="card__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua.

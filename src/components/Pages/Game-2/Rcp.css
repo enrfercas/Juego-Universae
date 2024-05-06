@@ -29,33 +29,32 @@
     font-family: sans-serif;
     font-weight: bold;
     letter-spacing: calc(1.1rem);
-    overflow: hidden;
+    text-align: center;
+    /* overflow: hidden;
     width: fit-content;
     /* Para ocultar el texto que se desborda */
-    border-right: .15em solid orange;
+    /* border-right: .15em solid orange; */
     /* Simula el cursor de escritura */
-    white-space: nowrap;
+    /* white-space: nowrap; */
     /* Evita que el texto se rompa */
     margin: 0 auto;
     /* Centra el texto */
     letter-spacing: .15em;
     /* Espaciado entre letras */
-    animation: escribir 2.5s steps(37) forwards;
-    /* Animación de escribir */
-}
+    animation: aparecer 3.5s;
 
-@keyframes escribir {
+/* @keyframes escribir {
     from {
         width: 0;
     }
 
     /* Ancho inicial, el texto no es visible */
-    to {
+    /* to {
         width: 60%;
-    }
+    } */
 
     /* Ancho final, el texto está completamente visible */
-}
+} 
 .juego-descripcion {
     width: 20%;
     padding: 2rem 4rem;
@@ -154,9 +153,14 @@
 @media (max-width: 1400px) {
     .contenedor-juego{
         flex-direction: column;
+        padding: 0.5rem 0.8rem;
     }
     .juego-descripcion, .div-juego, .galeria-juego {
-        width: 80%;
+        width: 92%;
+        
+    }
+    .juego-descripcion {
+        padding: 0.5rem 1rem;
     }
     .galeria-juego {
         flex-direction: row;
@@ -165,6 +169,7 @@
     .imagen-juego {
         width: 38%;
     }
+    .modal-content {
+        width: 70%;
+    }
 }
-
-
