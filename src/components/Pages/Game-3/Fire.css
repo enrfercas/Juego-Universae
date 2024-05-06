@@ -1,0 +1,493 @@
+.body-text h1 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 138%;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Franklin Gothic';
+}
+.body-text {
+
+  font-size: 18px;
+  margin: 25px;
+  width: 20%;
+  justify-content: right;
+  color: #fff;
+  font-family: 'Franklin Gothic';
+  font-family: cursive;
+  margin-top: auto;
+  margin-left: 200px;
+  
+ 
+}
+.iframe {
+border: none;
+overflow: hidden;
+}
+.juego {
+  width: 100%;
+  height: 90vh;
+}
+
+
+/*  HEADER / NAV */
+
+.gradient-header {
+  padding: 1rem 1rem;
+  background: rgb(2, 14, 27);
+  background: linear-gradient(90deg, rgba(2, 14, 27, 1) 0%, rgba(19, 76, 143, 1) 50%, rgba(137, 188, 247, 1) 100%);
+  background-size: 200% 100%;
+  /* Doble tamaño para que el gradiente se extienda */
+  animation: headerMov 3.5s linear infinite;
+  /* Aplica la animación */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-bottom: 50px;
+
+}
+
+@keyframes headerMov {
+  0% {
+    background-position: 0 0;
+    /* Empieza con el gradiente en la posición inicial */
+  }
+
+  50% {
+    background-position: 100% 0;
+    /* Llega a la posición final en la mitad del tiempo */
+  }
+
+  100% {
+    background-position: 0 0;
+    /* Vuelve a la posición inicial al final de la animación */
+  }
+}
+
+.logo-universae {
+  opacity: 0;
+  /* Inicialmente transparente */
+  animation: aparecer 7s ease forwards;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    /* Comienza completamente transparente */
+  }
+
+  100% {
+    opacity: 1;
+    /* Termina completamente opaco */
+  }
+}
+
+.gradient-footer {
+  background: rgb(150, 191, 237);
+  background: linear-gradient(90deg, rgb(91, 147, 212) 0%, rgba(19, 76, 143, 1) 30%, rgba(2, 14, 27, 1) 100%);
+  background-size: 200% 100%;
+  /* Doble tamaño para que el gradiente se extienda */
+  animation: headerMov 3.5s linear infinite;
+  /* Aplica la animación */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+/*Botón de play*/
+
+.game-button {
+position: fixed;
+bottom: 0.6rem;
+right: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 2rem;
+background: #86d295;
+font-family: "Montserrat", sans-serif;
+box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+cursor: pointer;
+border: none;
+}
+
+.game-button:after {
+content: " ";
+width: 0%;
+height: 100%;
+background: #b6e1f9;
+position: absolute;
+transition: all 0.6s ease-in-out;
+right: 0;
+}
+
+.game-button:hover::after {
+right: auto;
+left: 0;
+width: 100%;
+}
+
+.game-button span {
+text-align: center;
+text-decoration: none;
+width: 100%;
+padding: 18px 25px;
+color: #134c8f;
+font-size: 1rem;
+font-weight: 700;
+letter-spacing: 0.3em;
+z-index: 20;
+transition: all 0.3s ease-in-out;
+}
+
+.game-button:hover span {
+
+animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+0% {
+  transform: scale(1);
+}
+
+50% {
+  transform: scale(0.95);
+}
+
+100% {
+  transform: scale(1);
+}
+}
+
+
+
+
+
+
+
+.button-game {
+position: relative;
+width: 11em;
+height: 4em;
+outline: none;
+transition: 0.1s;
+background-color: transparent;
+border: none;
+font-size: 13px;
+font-weight: bold;
+color: #ddebf0;
+justify-content: left;
+bottom: auto;
+}
+
+#clip {
+--color: #2761c3;
+position: absolute;
+top: 0;
+overflow: hidden;
+width: 100%;
+height: 100%;
+border: 5px double var(--color);
+box-shadow: inset 0px 0px 15px #195480;
+-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+clip-path: polygon(0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); 
+}
+
+.arrow {
+position: absolute;
+transition: 0.2s;
+background-color: #2761c3;
+top: 35%;
+width: 11%;
+height: 30%;
+}
+
+#leftArrow {
+left: -13.5%;
+-webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+clip-path: 100% 0, 100% 100%, 0 50%;
+}
+
+#rightArrow {
+-webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+clip-path: polygon(100% 49%, 0 0, 0 100%);
+left: 102%;
+}
+
+button:hover #rightArrow {
+background-color: #27c39f;
+left: -15%;
+animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+}
+
+button:hover #leftArrow {
+background-color: #27c39f;
+left: 103%;
+animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+}
+
+.corner {
+position: absolute;
+width: 4em;
+height: 4em;
+background-color: #2761c3;
+box-shadow: inset 1px 1px 8px #2781c3;
+transform: scale(1) rotate(45deg);
+transition: 0.2s;
+}
+
+#rightTop {
+top: -1.98em;
+left: 91%;
+}
+
+#leftTop {
+top: -1.96em;
+left: -3.0em;
+}
+
+#leftBottom {
+top: 2.10em;
+left: -2.15em;
+}
+
+#rightBottom {
+top: 45%;
+left: 88%;
+}
+
+button:hover #leftTop {
+animation: 0.1s ease-in-out 0.05s both changeColor8,
+0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover #rightTop {
+animation: 0.1s ease-in-out 0.15s both changeColor8,
+0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover #rightBottom {
+animation: 0.1s ease-in-out 0.25s both changeColor8,
+0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover #leftBottom {
+animation: 0.1s ease-in-out 0.35s both changeColor8,
+0.2s linear 0.4s both lightEffect8;
+}
+
+button:hover .corner {
+transform: scale(1.25) rotate(45deg);
+}
+
+button:hover #clip {
+animation: 0.2s ease-in-out 0.55s both greenLight8;
+--color: #27c39f;
+}
+
+@keyframes changeColor8 {
+from {
+  background-color: #2781c3;
+}
+
+to {
+  background-color: #27c39f;
+}
+}
+
+@keyframes lightEffect8 {
+from {
+  box-shadow: 1px 1px 5px #27c39f;
+}
+
+to {
+  box-shadow: 0 0 2px #27c39f;
+}
+}
+
+@keyframes greenLight8 {
+from {
+}
+
+to {
+  box-shadow: inset 0px 0px 32px #27c39f;
+}
+}
+
+@keyframes leftArrow8 {
+from {
+  transform: translate(0px);
+}
+
+to {
+  transform: translateX(10px);
+}
+}
+
+@keyframes rightArrow8 {
+from {
+  transform: translate(0px);
+}
+
+to {
+  transform: translateX(-10px);
+}
+}
+
+/*Card description*/
+
+.card-3 {
+margin-top: 150px;
+width: 400px;
+height: 500px;
+transform: rotate(90deg);
+background: #025a66;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+transition-duration: 1.5s;
+transition-property: width, height,transform;
+margin-left: 120px;
+}
+
+.card-3:hover {
+width: 290px;
+height: 500px;
+transform: rotate(0deg);
+ /* -ms-transform:rotate(90deg);
+ -webkit-transform:rotate(90deg); */
+}
+
+.card__content-game3 {
+padding: 1rem;
+font-size: smaller;
+}
+
+.card__date-game3 {
+color: white;
+margin-bottom: .5rem;
+font-weight: 1000;
+}
+
+.card__info-game3 {
+width: 100%;
+height: 400px;
+padding: .7rem;
+font-size: smaller;
+border-radius: 1rem;
+text-align: center;
+background-color: #fae4c3;
+color: #fae4c3;
+transition-duration: 1s;
+transition-property: color;
+}
+
+.card__info-game3:hover {
+color: #212121;
+}
+
+
+
+
+@media(max-width: 768px) {
+
+.card-3 {
+  margin-top: 700px;
+  width: 200px;
+  height: 400px;
+  transform: rotate(90deg);
+  background: #025a66;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition-duration: 1.5s;
+  transition-property: width, height,transform;
+  margin-right: 400px;
+
+  
+ }
+ 
+ .card-3:hover {
+  width: 190px;
+  height: 250px;
+  transform: rotate(0deg);
+   /* -ms-transform:rotate(90deg);
+   -webkit-transform:rotate(90deg); */
+ }
+ 
+ .card__content-game3 {
+  padding: 1rem;
+  font-size: smaller;
+ }
+ 
+ .card__date-game3 {
+  color: white;
+  margin-bottom: .5rem;
+  font-weight: 200;
+ }
+ 
+ .card__info-game3 {
+  width: 100%;
+  height: 400px;
+  padding: .5rem;
+  font-size: smaller;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #fae4c3;
+  color: #fae4c3;
+  transition-duration: 1s;
+  transition-property: color;
+ }
+ .card-3:hover {
+  width: 190px;
+  height: 500px;
+  transform: rotate(0deg);
+   /* -ms-transform:rotate(90deg);
+   -webkit-transform:rotate(90deg); */
+ }
+
+ 
+.body-text h1 {
+  font-size: 13px;
+  font-weight: bold;
+ 
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Franklin Gothic';
+}
+.body-text {
+
+  font-size: 14px;
+  margin: 25px;
+  width: 20%;
+  justify-content: right;
+  color: #fff;
+  font-family: 'Franklin Gothic';
+  font-family: cursive;
+  margin-top: auto;
+  margin-left: 200px;
+  
+ 
+}
+
+.game-button {
+position: fixed;
+bottom: 0.6rem;
+right: 0.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 1rem;
+background: #86d295;
+font-family: "Montserrat", sans-serif;
+box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+cursor: pointer;
+border: none;
+}
+.juego {
+width: 100%;
+height: 60vh;
+}
+.carousel-inner {
+height: auto;
+width: auto;
+}
+
+}
