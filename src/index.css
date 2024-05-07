@@ -8,6 +8,10 @@
     --social-links-color: #45b8ac;
 }
 
+html {
+    min-height: 100%;
+}
+
 
 
 
@@ -17,6 +21,8 @@ body {
     background-size: cover; /* Cambiado de 'contain' a 'cover' */
     background-position: center center;
     z-index: -5;
+    height: 100%;
+    
     
 }
 
