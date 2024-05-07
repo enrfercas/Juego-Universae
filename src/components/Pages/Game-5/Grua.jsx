@@ -74,14 +74,15 @@ export const Grua = () => {
                     ></button>
                   </div>
 
-                <div className="modal-body d-flex justify-content-center w-90">
-                  <iframe
-                    className="juego"
-                    scrolling="no"
-                    allowFullScreen={true}
-                    frameBorder="0"
-                    src="https://html-classic.itch.zone/html/8561483/index.html"
-                  ></iframe>
+                  <div className="modal-body d-flex justify-content-center w-90">
+                    <iframe
+                      className="juego"
+                      scrolling="no"
+                      allowFullScreen={true}
+                      frameBorder="0"
+                      src="https://html-classic.itch.zone/html/8561483/index.html"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
@@ -101,8 +102,8 @@ export const Grua = () => {
             <div className="col-lg-3">
               <div className="juego-descripcion">
                 <p>
-                  Bienvenido al juego de Grúa. Deberás
-                  familiarizarte con los controles y hacer esto
+                  Bienvenido al juego de Grúa. Deberás familiarizarte con los
+                  controles y hacer esto
                 </p>
                 <h2>Controles e instrucciones</h2>
                 <p>
