@@ -1,9 +1,8 @@
-import "./Grua.css";
-import "../Game-2/Rcp.css";
+
 
 import { useState, useRef, useEffect } from "react";
 
-export const Grua = () => {
+export const Helicop = () => {
   const [modalImageSrc, setModalImageSrc] = useState("");
   const modalRef = useRef(null);
   const iframeRef = useRef(null);
