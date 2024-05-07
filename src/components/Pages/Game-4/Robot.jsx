@@ -86,7 +86,7 @@ export const Robot = () => {
                   data-bs-slide="prev"
                 >
                   <span
-                    className="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"  
                     aria-hidden="true"
                   ></span>
                   <span className="visually-hidden">Previous</span>

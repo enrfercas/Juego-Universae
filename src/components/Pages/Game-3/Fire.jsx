@@ -118,7 +118,7 @@ export const Fire = () => {
                 <div className="card__date-game3"> GAME DESCRIPTION</div>
                 <div className="card__info-game3">
                   <h3>
-                    Maniobra de extinción según instalación<br></br>
+                    Bienvenido al juego de Extinción de incendios.<br></br>
                   </h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

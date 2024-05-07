@@ -81,8 +81,7 @@ export const Rcp = () => {
             <div className="col-lg-3">
               <div className="juego-descripcion">
                 <p>
-                  Bienvenido al juego de hemorragias internas. Deberás
-                  familiarizarte con los controles y hacer esto
+                  Bienvenido al juego de hemorragias internas.
                 </p>
                 <h2>Controles e instrucciones</h2>
                 <p>

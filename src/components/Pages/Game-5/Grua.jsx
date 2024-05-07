@@ -46,7 +46,7 @@ export const Grua = () => {
           <div
             className="modal-dialog modal-fullscreen-lg-centered"
             style={{ zIndex: 2000, width: "80%" }}
-          >
+            >
             <div className="modal-content d-flex w-100">
               <div className="fondo-iframe">
                 <div className="boton">
@@ -59,7 +59,7 @@ export const Grua = () => {
                   ></button>
                 </div>
 
-                <div className="modal-body d-flex justify-content-center w-90">
+                <div className="modal-body d-flex justify-content-center w-100">
                   <iframe
                     className="juego"
                     scrolling="no"
@@ -86,8 +86,7 @@ export const Grua = () => {
             <div className="col-lg-3">
               <div className="juego-descripcion">
                 <p>
-                  Bienvenido al juego de Grúa. Deberás
-                  familiarizarte con los controles y hacer esto
+                  Bienvenido al juego de Grúa.
                 </p>
                 <h2>Controles e instrucciones</h2>
                 <p>
