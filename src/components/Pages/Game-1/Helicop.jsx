@@ -93,17 +93,15 @@ export const Helicop = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
-              <h1 className="titulo-juego">
-                Rescate en Helicóptero
-              </h1>
+              <h1 className="titulo-juego">Rescate en Helicóptero</h1>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-flex justify-content-center">
               <div className="juego-descripcion">
                 <p>
-                  Bienvenido al juego de Helicóptero. Deberás familiarizarte con los
-                  controles y hacer esto
+                  Bienvenido al juego de Helicóptero. Deberás familiarizarte con
+                  los controles y hacer esto
                 </p>
                 <h2>Controles e instrucciones</h2>
                 <p>

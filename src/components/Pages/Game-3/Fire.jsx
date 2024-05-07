@@ -102,11 +102,11 @@ export const Fire = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-flex justify-content-center">
               <div className="juego-descripcion">
                 <p>
-                  Bienvenido al juego de extinción de incendios. Deberás familiarizarte con los
-                  controles y hacer esto:
+                  Bienvenido al juego de extinción de incendios. Deberás
+                  familiarizarte con los controles y hacer esto:
                 </p>
                 <h2>Controles e instrucciones</h2>
                 <p>

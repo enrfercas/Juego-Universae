@@ -93,13 +93,11 @@ export const Robot = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
-              <h1 className="titulo-juego">
-                PROTOCOLO SOBRE EL USO DE EPIS
-              </h1>
+              <h1 className="titulo-juego">PROTOCOLO SOBRE EL USO DE EPIS</h1>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-flex justify-content-center">
               <div className="juego-descripcion">
                 <h2>Bienvenido al juego EPIS Defenders</h2>
                 <p>Es un juego de acción y estrategia</p>

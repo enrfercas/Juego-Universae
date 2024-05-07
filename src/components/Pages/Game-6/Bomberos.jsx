@@ -74,13 +74,11 @@ export const Bomberos = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
-              <h1 className="titulo-juego">
-                RESCATE EN ASCENSOR 
-              </h1>
+              <h1 className="titulo-juego">RESCATE EN ASCENSOR</h1>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-flex justify-content-center">
               <div className="juego-descripcion">
                 <p>
                   Bienvenido al juego de Rescate en Ascensor. Deberás

@@ -101,7 +101,7 @@ export const Grua = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 d-flex justify-content-center">
               <div className="juego-descripcion">
                 <p>
                   Bienvenido al juego de Grúa. Deberás familiarizarte con los
