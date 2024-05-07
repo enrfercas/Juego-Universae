@@ -1,22 +1,22 @@
 import "./Grua.css";
-import '../Game-2/Rcp.css';
+import "../Game-2/Rcp.css";
 
 import { useState, useRef, useEffect } from "react";
 
 export const Grua = () => {
   const [modalImageSrc, setModalImageSrc] = useState("");
   const modalRef = useRef(null);
+  const iframeRef = useRef(null);
 
   const handleImageClick = (src) => {
     setModalImageSrc(src);
-    document.body.style.overflow = 'hidden';
-    
+    document.body.style.overflow = "hidden";
   };
 
   const handleClickOutsideImage = (event) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) {
       setModalImageSrc("");
-      document.body.style.overflow = 'auto'; 
+      document.body.style.overflow = "auto";
     }
   };
 
@@ -38,28 +38,43 @@ export const Grua = () => {
     setMostrarIframe(false);
   };
 
+  useEffect(() => {
+    const handleOrientationChange = () => {
+      if (iframeRef.current && mostrarIframe) {
+        iframeRef.current.style.width = "100%";
+      }
+    };
+
+    window.addEventListener("orientationchange", handleOrientationChange);
+
+    return () => {
+      window.removeEventListener("orientationchange", handleOrientationChange);
+    };
+  }, [mostrarIframe]);
+
   return (
     <>
       <div className="header-spacer"></div>
       {mostrarIframe && (
         <>
-          <div
-            className="modal-dialog modal-fullscreen-lg-centered"
-            style={{ zIndex: 2000, width: "80%" }}
+          <div className="container-fluid d-flex justify-content-center">
+            <div
+              className="modal-dialog modal-fullscreen-lg-centered"
+              style={{ zIndex: 2000, width: "80%" }}
             >
-            <div className="modal-content d-flex w-100">
-              <div className="fondo-iframe">
-                <div className="boton">
-                  <button
-                    type="button"
-                    className="btn-close"
-                    onClick={cerrarModalHandler}                    
-                    data-bs-theme="light"
-                    aria-label="Close"
-                  ></button>
-                </div>
+              <div className="modal-content d-flex w-100">
+                <div className="fondo-iframe">
+                  <div className="boton">
+                    <button
+                      type="button"
+                      className="btn-close"
+                      onClick={cerrarModalHandler}
+                      data-bs-theme="light"
+                      aria-label="Close"
+                    ></button>
+                  </div>
 
-                <div className="modal-body d-flex justify-content-center w-100">
+                <div className="modal-body d-flex justify-content-center w-90">
                   <iframe
                     className="juego"
                     scrolling="no"
@@ -86,7 +101,8 @@ export const Grua = () => {
             <div className="col-lg-3">
               <div className="juego-descripcion">
                 <p>
-                  Bienvenido al juego de Grúa.
+                  Bienvenido al juego de Grúa. Deberás
+                  familiarizarte con los controles y hacer esto
                 </p>
                 <h2>Controles e instrucciones</h2>
                 <p>
@@ -106,7 +122,6 @@ export const Grua = () => {
               <img
                 className="imagen-boton"
                 src="/public/iframe-imagen.png"
-                
                 onClick={mostrarIframeHandler}
               />
             </div>
