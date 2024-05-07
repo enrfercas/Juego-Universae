@@ -42,7 +42,7 @@ export const Grua = () => {
     const handleOrientationChange = () => {
       if (iframeRef.current && mostrarIframe) {
         iframeRef.current.style.width = "100%";
-        console.log('handle orientation: ', iframeRef);
+        console.log("handle orientation: ", iframeRef);
         location.reload();
       }
     };
@@ -121,12 +121,15 @@ export const Grua = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 d-flex justify-content-center">
-              <img
-                className="imagen-boton"
-                src="/public/iframe-imagen.png"
-                onClick={mostrarIframeHandler}
-              />
+            <div className="col-lg-6">
+              <div className="container d-flex justify-content-center">
+                <img
+                  className="imagen-boton"
+                  src="/public/iframe-imagen.png"
+                  style={{ width: "90%", margin: "auto" }}
+                  onClick={mostrarIframeHandler}
+                />
+              </div>
             </div>
             <div className="col-lg-3 d-flex justify-content-center">
               <div className="galeria-juego">
