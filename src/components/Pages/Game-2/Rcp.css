@@ -120,7 +120,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    overflow-y: hidden;
     display: flex;
     width: 100%;
     background-color: #0c2e54ca;    
@@ -131,7 +131,7 @@
 }
 
 .modal-content {
-    width: 100%; 
+    width: 45%; 
     background-color: #16519400;
     display: flex;
     align-items: center;
@@ -158,10 +158,6 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .imagen-juego {
-        width: 38%;
-    }
-    .modal-content {
-        width: 100%;
-    }
+   
+   
 }
