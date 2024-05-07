@@ -98,12 +98,14 @@ export const Rcp = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <img
-                className="imagen-boton"
-                src="/public/iframe-imagen.png"
-                style={{ width: "90%" }}
-                onClick={mostrarIframeHandler}
-              />
+              <div className="container d-flex justify-content-center">
+                <img
+                  className="imagen-boton"
+                  src="/public/iframe-imagen.png"
+                  style={{ width: "90%", margin: "auto" }}
+                  onClick={mostrarIframeHandler}
+                />
+              </div>
             </div>
             <div className="col-lg-3 d-flex justify-content-center">
               <div className="galeria-juego">
