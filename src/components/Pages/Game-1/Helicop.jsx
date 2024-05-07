@@ -40,7 +40,7 @@ export const Helicop = () => {
   useEffect(() => {
     const handleOrientationChange = () => {
       if (iframeRef.current && mostrarIframe) {
-        iframeRef.current.style.width = "100%";
+        
         location.reload();
       }
     };
