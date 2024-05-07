@@ -8,6 +8,10 @@
     --social-links-color: #45b8ac;
 }
 
+html {
+    min-height: 100%;
+}
+
 
 
 
@@ -17,6 +21,8 @@ body {
     background-size: cover; /* Cambiado de 'contain' a 'cover' */
     background-position: center center;
     z-index: -5;
+    height: 100%;
+    
     
 }
 
@@ -30,11 +36,11 @@ body {
     padding: 3rem;
     margin-bottom: 3rem;
     margin-top: 15rem;
-    width: 60%;
+    width: 80%;
     
     
 }
-@media(max-width: 768px){
+@media(max-width: 1300px){
     .body-content {
         width: 100%;
     }
@@ -42,7 +48,7 @@ body {
 @media (max-width: 580px) {
     .body-content {
         padding: 2rem;
-        width: 90%;
+        
         margin-top: 8rem;
     }
 }

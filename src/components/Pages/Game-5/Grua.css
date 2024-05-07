@@ -35,16 +35,16 @@
     height: 480px;
 }
 .imagen-boton:hover {
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .fondo-iframe{
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     
-    background-color: #134d8f74;
-    
+    background-color: #134d8fdb;
+    padding: 1.5rem;
     border: 2px solid var(--header-color);
     border-radius: 2rem;
 
@@ -52,8 +52,9 @@
 
 .juego {
     
-    width: 90%;
-    min-height: 650px;
+    width: 100%;
+    height: 650px;
+    overflow: auto;
     
 }
 
@@ -84,6 +85,9 @@
     .titulo-juego {
         font-size: 1.8rem;
     }
+    .juego {
+        height: 400px;
+    }
 }
 @media (max-width: 980px) {
     .imagen-juego {
@@ -91,5 +95,14 @@
     }
     .modal-content {
         width: 78%;
+    }
+    .juego {
+        
+        height: 400px;
+    }
+}
+@media (max-width: 480px) {
+    .juego {
+        height: 280px;
     }
 }
