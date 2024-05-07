@@ -20,18 +20,25 @@ export const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link" aria-current="page" href="#" style={{ color: "#fff" }}>
-                Home
-              </a>
-              <a className="nav-link" href="#" style={{ color: "#fff" }}>
-                Features
-              </a>
-              <a className="nav-link" href="#" style={{ color: "#fff" }}>
-                Pricing
-              </a>
-              <a className="nav-link disabled" aria-disabled="true" style={{ color: "#fff" }}>
-                Disabled
-              </a>
+             
+              <Link to='/Helicop'className="nav-link" href="#" style={{ color: "#fff" }}>
+                Helicoptero
+              </Link>
+              <Link to='/Rcp' className="nav-link" href="#" style={{ color: "#fff" }}>
+                Reanimación
+              </Link>
+              <Link to='/Fire' className="nav-link" aria-disabled="true" style={{ color: "#fff" }}>
+                Incendios
+              </Link>
+              <Link to='/Bomberos' className="nav-link " aria-disabled="true" style={{ color: "#fff" }}>
+                Bomberos
+              </Link>
+              <Link to='/Grua' className="nav-link" aria-disabled="true" style={{ color: "#fff" }}>
+                Grúa
+              </Link>
+              <Link to='/Robot' className="nav-link" aria-disabled="true" style={{ color: "#fff" }}>
+                Robot
+              </Link>
             </div>
           </div>
         </div>
