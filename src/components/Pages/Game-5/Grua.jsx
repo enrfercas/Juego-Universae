@@ -42,6 +42,7 @@ export const Grua = () => {
     const handleOrientationChange = () => {
       if (iframeRef.current && mostrarIframe) {
         iframeRef.current.style.width = "100%";
+        console.log('handle orientation: ', iframeRef);
         location.reload();
       }
     };
