@@ -1,127 +1,179 @@
-import "./Bomberos.css";
-import { useEffect } from "react";
-import Swal from "sweetalert2";
-
+import './Bomberos.css'
+import { useState, useRef, useEffect } from "react";
 
 export const Bomberos = () => {
+  const [modalImageSrc, setModalImageSrc] = useState("");
+  const modalRef = useRef(null);
+
+  const handleImageClick = (src) => {
+    setModalImageSrc(src);
+  };
+
+  const handleClickOutsideImage = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      setModalImageSrc("");
+    }
+  };
+
   useEffect(() => {
-    const carouselSlide = document.querySelector(".carousel-slide");
-    const carouselImages = document.querySelectorAll(".carousel-slide img");
-    const prevBtn = document.querySelector(".prev-btn");
-    const nextBtn = document.querySelector(".next-btn");
-
-    let counter = 0;
-    const size = carouselImages[0].clientWidth;
-
-    carouselSlide.style.transform = "translateX(0)";
-
-    nextBtn.addEventListener("click", () => {
-      if (counter >= carouselImages.length - 1) return;
-      carouselSlide.style.transition = "transform 0.4s ease-in-out";
-      counter++;
-      carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-      carouselImages.forEach((img) => img.classList.remove("active"));
-      carouselImages[counter].classList.add("active");
-    });
-
-    prevBtn.addEventListener("click", () => {
-      if (counter <= 0) return;
-      carouselSlide.style.transition = "transform 0.4s ease-in-out";
-      counter--;
-      carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-      carouselImages.forEach((img) => img.classList.remove("active"));
-      carouselImages[counter].classList.add("active");
-    });
-
-    carouselSlide.addEventListener("transitionend", () => {
-      if (carouselImages[counter].id === "lastClone") {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length - 1;
-        carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-        carouselImages.forEach((img) => img.classList.remove("active"));
-        carouselImages[counter].classList.add("active");
-      }
-      if (carouselImages[counter].id === "firstClone") {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length - counter;
-        carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-        carouselImages.forEach((img) => img.classList.remove("active"));
-        carouselImages[counter].classList.add("active");
-      }
-    });
-
-   // swettalert//
-    Swal.fire({
-      title: 'Bienvenido a Rescate en Ascensor',
-      text: 'Haz clic para continuar',
-      icon: 'game',
-      confirmButtonText: 'Continuar'
-    });
+    document.addEventListener("mousedown", handleClickOutsideImage);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideImage);
+    };
   }, []);
 
-  
+  const [mostrarIframe, setMostrarIframe] = useState(false);
+
+  const mostrarIframeHandler = () => {
+    console.log("Cambiando el estado de mostrarIframe");
+    setMostrarIframe(true);
+  };
+
+  const cerrarModalHandler = () => {
+    setMostrarIframe(false);
+  };
+
   return (
     <>
-      <div id="app"></div>
-      <div className="contenedor-principal">
-        <div className="espacio-header"></div>
-        
-        <div className="carousel-container">
-          <div className="carousel-slide">
-            <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor0.png"
-              alt="Imagen 1"
-            />
-            <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor1.png"
-              alt="Imagen 2"
-            />
-            <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor2.png"
-              alt="Imagen 3"
-            />
-            <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor3.png"
-              alt="Imagen 4"
-            />
-            <img
-              src="/public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor4.png"
-              alt="Imagen 5"
-            />
-          </div>
-          <button className="prev-btn"> {"<"} </button>
-          <button className="next-btn"> {">"}</button>
-        </div>
+      <div className="header-spacer"></div>
+      {mostrarIframe && (
+        <>
+          <div
+            className="modal-dialog modal-fullscreen-lg-centered"
+            style={{ zIndex: 2000, width: "80%" }}
+          >
+            <div className="modal-content d-flex w-100">
+              <div className="fondo-iframe">
+                <div className="boton">
+                  <button
+                    type="button"
+                    className="btn-close"
+                    onClick={cerrarModalHandler}
+                    data-bs-theme="light"
+                    aria-label="Close"
+                  ></button>
+                </div>
 
-        <div className="book">
-          <div className="book-text">
-            <p>
-              Dreamtime Combat es un juego de acción y plataformas basado en la
-              mitología aborigen australiana, en el que juegas como un águila
-              azul hostil. Pon fin a la era del Tiempo de los Sueños mediante el
-              asesinato violento de los dioses australianos. Destruye los tótems
-              para expulsar el poder divino del mundo mundano y mata al héroe
-              cultural Baiame.
-            </p>
+                <div className="modal-body d-flex justify-content-center w-90">
+                  <iframe
+                    className="juego"
+                    scrolling="no"
+                    allowFullScreen={true}
+                    frameBorder="0"
+                    src="https://html-classic.itch.zone/html/8561483/index.html"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="cover">
-            <img src="/public/logo_azul.png" alt="logo universae" />
-            <h1>Intrucciones</h1>
+        </>
+      )}
+      {!mostrarIframe && (
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-12">
+              <h1 className="titulo-juego">
+                RESCATE EN ASCENSOR 
+              </h1>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-3">
+              <div className="juego-descripcion">
+                <p>
+                  Bienvenido al juego de Rescate en Ascensor. Deberás
+                  familiarizarte con los controles y hacer esto
+                </p>
+                <h2>Controles e instrucciones</h2>
+                <p>
+                  Puede comenzar la partida dando a <span>comenzar</span>, si lo
+                  prefiere puede hacer agrandar el juego haciendo{" "}
+                  <span>doble click</span> en el juego. Los controles seran{" "}
+                  <span>W</span> para avanzar <span>A</span> y <span>D</span>{" "}
+                  para desplazamiento lateral y <span>S</span> para ir hacia
+                  atrás. Los movimientos de cabeza se harán con el{" "}
+                  <span>Mouse</span>, y puede interactuar con los objetos de su
+                  entorno con la tecla <span>F</span>. Buena suerte con su
+                  partida.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <img
+                className="imagen-boton"
+                src="/public/iframe-imagen.png"
+                style={{ width: "90%" }}
+                onClick={mostrarIframeHandler}
+              />
+            </div>
+            <div className="col-lg-3 d-flex justify-content-center">
+              <div className="galeria-juego">
+                <h3>Galería</h3>
+                <img
+                  className="imagen-juego"
+                  onClick={() =>
+                    handleImageClick(
+                      "public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor0.png"
+                    )
+                  }
+                  src="public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor0.png"
+                  alt="imagen de juego"
+                />
+                <img
+                  className="imagen-juego"
+                  onClick={() =>
+                    handleImageClick(
+                      "public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor1.png"
+                    )
+                  }
+                  src="public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor1.png"
+                  alt="imagen de juego"
+                />
+                <img
+                  className="imagen-juego"
+                  onClick={() =>
+                    handleImageClick(
+                      "public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor2.png"
+                    )
+                  }
+                  src="public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor2.png"
+                  alt="imagen de juego"
+                />
+                <img
+                  className="imagen-juego"
+                  onClick={() =>
+                    handleImageClick(
+                      "public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor3.png"
+                    )
+                  }
+                  src="public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor3.png"
+                  alt="imagen de juego"
+                />
+                <img
+                  className="imagen-juego"
+                  onClick={() =>
+                    handleImageClick(
+                      "public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor4.png"
+                    )
+                  }
+                  src="public/Games-Images/InterfazGame/Miniaturas/Ascensor/Ascensor4.png"
+                  alt="imagen de juego"
+                />
+              </div>
+            </div>
+            <div className={`modal ${modalImageSrc ? "" : "modal-off"}`}>
+              <div ref={modalRef} className="modal-content">
+                <img
+                  className="imagen-modal"
+                  src={modalImageSrc}
+                  alt="imagen-modal"
+                />
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="contenedor-container">
-          <iframe
-            className="juego"
-            scrolling="no"
-            allowfullscreen=""
-            frameBorder="0"
-            src="https://html-classic.itch.zone/html/8561483/index.html"
-          ></iframe>
-        </div>
-      </div>
+      )}
     </>
   );
 };
-
 export default Bomberos;
