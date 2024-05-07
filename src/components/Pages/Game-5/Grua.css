@@ -22,9 +22,8 @@
 .galeria-juego {
     width: 100%;
     display: flex;
-    padding: .5rem;
-    align-items: center;
-    justify-content: center;
+    padding: .5rem;   
+    justify-content: flex-start;
     flex-direction: column;
     background-color: #134d8f45;
     border-radius: 2rem;
