@@ -7,11 +7,13 @@ export const Bomberos = () => {
 
   const handleImageClick = (src) => {
     setModalImageSrc(src);
+    document.body.style.overflow = "hidden"; // Ocultar el scroll
   };
 
   const handleClickOutsideImage = (event) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) {
       setModalImageSrc("");
+      document.body.style.overflow = "auto"; // Restaurar el scroll
     }
   };
 
