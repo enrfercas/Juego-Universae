@@ -6,6 +6,7 @@ import { useState, useRef, useEffect } from "react";
 export const Grua = () => {
   const [modalImageSrc, setModalImageSrc] = useState("");
   const modalRef = useRef(null);
+  const iframeRef = useRef(null);
 
   const handleImageClick = (src) => {
     setModalImageSrc(src);
@@ -36,6 +37,20 @@ export const Grua = () => {
   const cerrarModalHandler = () => {
     setMostrarIframe(false);
   };
+
+  useEffect(() => {
+    const handleOrientationChange = () => {
+      if (iframeRef.current && mostrarIframe) {
+        iframeRef.current.style.width = "100%";
+      }
+    };
+
+    window.addEventListener("orientationchange", handleOrientationChange);
+
+    return () => {
+      window.removeEventListener("orientationchange", handleOrientationChange);
+    };
+  }, [mostrarIframe]);
 
   return (
     <>
