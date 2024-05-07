@@ -1,7 +1,7 @@
 import { Header } from './components/Header.jsx';
 import { Routes, Route } from 'react-router';
-import { Home } from './components/Pages/Home/Home.jsx'
-import { Footer } from './components/Footer.jsx'
+import { Home } from './components/Pages/Home/Home.jsx';
+import { Footer } from './components/Footer.jsx';
 import { Rcp } from './components/Pages/Game-2/Rcp.jsx';
 import { Helicop } from './components/Pages/Game-1/Helicop.jsx';
 import {Bomberos} from './components/Pages/Game-6/Bomberos.jsx';

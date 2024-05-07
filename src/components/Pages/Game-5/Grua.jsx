@@ -1,4 +1,6 @@
 import "./Grua.css";
+import '../Game-2/Rcp.css';
+
 import { useState, useRef, useEffect } from "react";
 
 export const Grua = () => {
@@ -7,11 +9,14 @@ export const Grua = () => {
 
   const handleImageClick = (src) => {
     setModalImageSrc(src);
+    document.body.style.overflow = 'hidden';
+    
   };
 
   const handleClickOutsideImage = (event) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) {
       setModalImageSrc("");
+      document.body.style.overflow = 'auto'; 
     }
   };
 
@@ -73,7 +78,7 @@ export const Grua = () => {
           <div className="row">
             <div className="col-12">
               <h1 className="titulo-juego">
-                PROTOCOLO ANTE UNA HEMORRAGIA INTERNA
+                PROTOCOLO SOBRE EL USO CORRECTO DE GRÚAS
               </h1>
             </div>
           </div>
@@ -81,7 +86,7 @@ export const Grua = () => {
             <div className="col-lg-3">
               <div className="juego-descripcion">
                 <p>
-                  Bienvenido al juego de hemorragias internas. Deberás
+                  Bienvenido al juego de Grúa. Deberás
                   familiarizarte con los controles y hacer esto
                 </p>
                 <h2>Controles e instrucciones</h2>
@@ -98,11 +103,11 @@ export const Grua = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 d-flex justify-content-center">
               <img
                 className="imagen-boton"
                 src="/public/iframe-imagen.png"
-                style={{ width: "90%" }}
+                
                 onClick={mostrarIframeHandler}
               />
             </div>
@@ -113,50 +118,50 @@ export const Grua = () => {
                   className="imagen-juego"
                   onClick={() =>
                     handleImageClick(
-                      "public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia0.png"
+                      "public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero0.png"
                     )
                   }
-                  src="public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia0.png"
+                  src="public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero0.png"
                   alt="imagen de juego"
                 />
                 <img
                   className="imagen-juego"
                   onClick={() =>
                     handleImageClick(
-                      "public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia1.png"
+                      "public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero1.png"
                     )
                   }
-                  src="public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia1.png"
+                  src="public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero1.png"
                   alt="imagen de juego"
                 />
                 <img
                   className="imagen-juego"
                   onClick={() =>
                     handleImageClick(
-                      "public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia2.png"
+                      "public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero2.png"
                     )
                   }
-                  src="public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia2.png"
+                  src="public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero2.png"
                   alt="imagen de juego"
                 />
                 <img
                   className="imagen-juego"
                   onClick={() =>
                     handleImageClick(
-                      "public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia3.png"
+                      "public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero3.png"
                     )
                   }
-                  src="public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia3.png"
+                  src="public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero3.png"
                   alt="imagen de juego"
                 />
                 <img
                   className="imagen-juego"
                   onClick={() =>
                     handleImageClick(
-                      "public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia4.png"
+                      "public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero4.png"
                     )
                   }
-                  src="public/Games-Images/InterfazGame/Miniaturas/Hemorragia/Hemorragia4.png"
+                  src="public/Games-Images/InterfazGame/Miniaturas/Helicoptero/Helicoptero4.png"
                   alt="imagen de juego"
                 />
               </div>
